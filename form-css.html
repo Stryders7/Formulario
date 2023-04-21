@@ -9,20 +9,45 @@
 </head>
 <body>
     <div class="center">
-        <h2>Login</h2>
-        <form action="form-css.html" method="post" name="Login">
-            <div class="txt_field">
-                <input type="text" name="usuario" id="usuario">
-                <label for="usuario">Usuario</label>
-            </div>
-            <div class="txt_field">
-                <input type="password" name="clave" id="clave">
-                <label for="clave">Clave</label>
-            </div>
-            <div>!! Olvido su contraseña? !!</div>
-            <input type="submit">
-            <div>No tiene cuenta <a href="##">Crear cuenta</a></div>
+        <h1>Login</h1>
+        <form method="post">
+          <div class="txt_field">
+            <input type="text" name="usuario" id="usuario"
+             required
+             minlength="8"
+             pattern="^([a-z]+[0-9]{0,2}){5,12}$"
+             autocomplete="off">
+             <label for="usuario">Nombre Usuario</label>
+          </div>
+          <div class="txt_field">
+            <input type="email" name="correo" id="correo"
+             required
+             minlength="8"
+             pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+             autocomplete="off">
+             <label for="usuario">Correo</label>
+          </div>
+  
+          <div class="txt_field">
+            <input type="password" name="clave" id="clave"
+             required
+             minlength="8"
+            pattern="[A-Za-z0-9!?-]{8,12}">
+            <label for="userPassword">Contraseña</label>
+          </div>
+  
+          <input type="submit" value="Iniciar Sesión">
+  
+          <div class="link_Registro">
+            Olvido Contraseña? <a href="#">Clic Aquí</a>
+          </div>
+  
+          <div class="link_Registro">
+            No Tiene Cuenta? <a href="#">Registrar</a>
+          </div>
+  
         </form>
-    </div>
+      </div>
+      <script src="js/app.js"></script>
 </body>
 </html>
