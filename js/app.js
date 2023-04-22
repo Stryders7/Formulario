@@ -15,3 +15,26 @@ if(prom >= 4){
 else {
     console.log("Usted no aprobo el ramo")
 }
+
+var vArr = ["Juan Perez", 50, 4.3, true];
+
+// console.log("Nombre: ", vArr[0])
+// console.log("Edad: ", vArr[1])
+// console.log("Nota: ", vArr[2])
+// console.log("Casado: ", vArr[3])
+
+// Ciclos iterativos 
+// for (x=0;x<=vArr.length;x++){
+//     console.log(vArr[x])
+// }
+
+// while(x<=vArr.length){
+//     console.log(vArr[x])
+//     break
+// }
+// Funciones
+function mensaje(){
+    console.log("Hola desde la fución")
+}
+mensaje();
+// Validación de un formulario

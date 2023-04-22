@@ -10,29 +10,21 @@
 <body>
     <div class="center">
         <h1>Login</h1>
-        <form method="post">
+        <form method="post" name="frmlogin" id="frmlogin">
           <div class="txt_field">
             <input type="text" name="usuario" id="usuario"
-             required
-             minlength="8"
-             pattern="^([a-z]+[0-9]{0,2}){5,12}$"
-             autocomplete="off">
+             required>
              <label for="usuario">Nombre Usuario</label>
           </div>
           <div class="txt_field">
             <input type="email" name="correo" id="correo"
-             required
-             minlength="8"
-             pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-             autocomplete="off">
+             required>
              <label for="usuario">Correo</label>
           </div>
   
           <div class="txt_field">
             <input type="password" name="clave" id="clave"
-             required
-             minlength="8"
-            pattern="[A-Za-z0-9!?-]{8,12}">
+             required>
             <label for="userPassword">Contraseña</label>
           </div>
   
